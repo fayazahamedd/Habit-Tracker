@@ -1,0 +1,67 @@
+/* CalendarView.css */
+
+.calendar-container {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  .calendar-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .calendar-table th,
+  .calendar-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .calendar-date {
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .calendar-date.disabled {
+    color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .calendar-date.selected {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .calendar-date.unselected {
+    background-color: #f1f1f1;
+    color: #333;
+  }
+  
+  .calendar-date.today {
+    border: 2px solid #4caf50;
+  }
+  
+  .selected-dates {
+    margin-top: 20px;
+  }
+  
+  .selected-dates h2 {
+    margin-bottom: 10px;
+  }
+  
+  .selected-dates ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .selected-dates li {
+    margin-bottom: 5px;
+  }
+  
